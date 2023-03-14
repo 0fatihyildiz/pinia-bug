@@ -1,13 +1,12 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
+  <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/form">Form</RouterLink>
-  </header>
+  </nav>
 
   <RouterView />
 </template>
@@ -25,13 +24,14 @@ header {
 
 nav {
   width: 100%;
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
   margin-top: 2rem;
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  background: #000;
+  color: white;
 }
 
 nav a.router-link-exact-active:hover {
